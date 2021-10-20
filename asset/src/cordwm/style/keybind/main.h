@@ -58,6 +58,11 @@ static Key keys[] = {
     { MODALT | ControlMask,                       XK_r,               spawn,              SHCMD("cordwm-focus-ctrl the_mousepad") },
 
 
+    // ## Wallpaper :
+    { MODALT,                                     XK_w,               spawn,              SHCMD("cordwm-wallpaper-ctrl shuf") },
+    { MODALT | ControlMask,                       XK_w,               spawn,              SHCMD("cordwm-wallpaper-ctrl default") },
+
+
     // ## Window / Border:
     { MODWIN,                                     XK_comma,           setborderpx,        {.i = -1 } },
     { MODWIN,                                     XK_period,          setborderpx,        {.i = +1 } },
