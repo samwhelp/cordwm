@@ -9,7 +9,7 @@
 pkgname=cordwm
 pkgver=0.1
 pkgrel=1
-pkgdesc="Cordwm (Dynamic window manager for X from Dwm)"
+pkgdesc="Cordwm (Dynamic window manager for X from Chadwm and Dwm)"
 arch=('x86_64')
 url="https://github.com/samwlep/cordwm"
 license=('MIT')
@@ -39,6 +39,8 @@ build () {
 package () {
 
 	cp -af "${srcdir}/usr" "${pkgdir}"
+	rm -f "${pkgdir}/usr/share/cordwm/config/cordwm/bin/maintain-install.sh"
+
 
 	#install -Dm755 "${srcdir}/src/cordwm/cordwm" "${pkgdir}/usr/bin/cordwm"
 	install -Dm755 "${srcdir}/src/cordwm/dwm" "${pkgdir}/usr/bin/cordwm"
