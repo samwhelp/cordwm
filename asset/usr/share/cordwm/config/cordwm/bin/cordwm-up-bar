@@ -61,6 +61,10 @@ app_bar_info_start_script () {
 
 app_bar_info_start () {
 
+	##
+	## TODO: kill old process on restart
+	##
+
 	#app_bar_info_start_gruvchad
 	#app_bar_info_start_nord
 	#app_bar_info_start_onedark
