@@ -147,5 +147,6 @@ static Key keys[] = {
     //{ MODALT,                                     XK_0,               tagmon,             {.i = -1 } },
     //{ MODALT,                                     XK_0,               tagmon,             {.i = +1 } },
 
+    // ## TODO: Gaps
 
 };
