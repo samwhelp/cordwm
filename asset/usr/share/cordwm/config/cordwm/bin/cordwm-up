@@ -86,6 +86,8 @@ main_app_upstart_with_xdg_autostart () {
 
 	##is_command_exist 'cordwm-up-panel' && cordwm-up-panel &
 
+	is_command_exist 'cordwm-up-bar' && cordwm-up-bar &
+
 	is_command_exist 'cordwm-up-applet' && cordwm-up-applet &
 
 }
@@ -101,6 +103,8 @@ main_app_upstart () {
 	is_command_exist 'cordwm-up-compositor' && cordwm-up-compositor &
 
 	##is_command_exist 'cordwm-up-panel' && cordwm-up-panel &
+
+	is_command_exist 'cordwm-up-bar' && cordwm-up-bar &
 
 	is_command_exist 'cordwm-up-applet' && cordwm-up-applet &
 
