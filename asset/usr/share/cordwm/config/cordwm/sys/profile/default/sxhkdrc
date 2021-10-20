@@ -1,0 +1,11 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	xfce4-terminal
+
+# program launcher
+super + @space
+	dmenu_run
