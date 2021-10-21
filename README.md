@@ -1,7 +1,7 @@
 
 # Cordwm
 
-[Cordwm](https://github.com/samwhelp/cordwm) (Dynamic window manager for X from Chadwm and Dwm)
+[Cordwm](https://github.com/samwhelp/cordwm) (Dynamic window manager for X from [Chadwm](https://github.com/siduck76/chadwm) and [Dwm](https://aur.archlinux.org/packages/dwm/))
 
 ## Subject
 
