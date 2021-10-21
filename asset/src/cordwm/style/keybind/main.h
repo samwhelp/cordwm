@@ -150,14 +150,14 @@ static Key keys[] = {
     { MODALT,                                     XK_period,          incnmaster,         {.i = +1 } },
 
     // ## Layout / Master Width:
-    { MODALT | ControlMask,                         XK_h,               setmfact,           {.f = -0.05} },
-    { MODALT | ControlMask,                         XK_l,               setmfact,           {.f = +0.05} },
-    //{ MODALT | ControlMask,                         XK_u,               setmfact,           {.f = 0.00} },
+    { MODALT | ControlMask,                       XK_h,               setmfact,           {.f = -0.05} },
+    { MODALT | ControlMask,                       XK_l,               setmfact,           {.f = +0.05} },
+    //{ MODALT | ControlMask,                       XK_u,               setmfact,           {.f = 0.00} },
 
 
-    { MODALT | ControlMask,                         XK_k,               setcfact,           {.f = -0.25} },
-    { MODALT | ControlMask,                         XK_j,               setcfact,           {.f = +0.25} },
-    { MODALT | ControlMask,                         XK_i,               setcfact,           {.f =  0.00} },
+    { MODALT | ControlMask,                       XK_k,               setcfact,           {.f = -0.25} },
+    { MODALT | ControlMask,                       XK_j,               setcfact,           {.f = +0.25} },
+    { MODALT | ControlMask,                       XK_i,               setcfact,           {.f =  0.00} },
 
     // ## Layout / Toggle Show Bar:
     { MODALT,                                     XK_b,               togglebar,          {.i = +1 } },
@@ -229,26 +229,28 @@ static Key keys[] = {
     { ControlMask,                                XK_Escape,          defaultgaps,        {0} },
     { MODALT,                                     XK_Escape,          togglegaps,         {0} },
 
+    // overall gaps
+    { MODALT,                                     XK_Page_Up,         incrgaps,           {.i = -1 } },
+    { MODALT,                                     XK_Page_Down,       incrgaps,           {.i = +1 } },
+
+    // outer gaps
+    { MODALT,                                     XK_minus,           incrogaps,          {.i = -1 } },
+    { MODALT,                                     XK_equal,           incrogaps,          {.i = +1 } },
+
     // inner gaps
     { MODALT,                                     XK_bracketleft,     incrigaps,          {.i = -1 } },
     { MODALT,                                     XK_bracketright,    incrigaps,          {.i = +1 } },
 
-    // overall gaps
-    { MODALT,                                     XK_minus,           incrogaps,          {.i = -1 } },
-    { MODALT,                                     XK_equal,           incrogaps,          {.i = +1 } },
+    // h inner gaps
+    { MODALT,                                     XK_Up,              incrihgaps,         {.i = +1 } },
+    { MODALT,                                     XK_Down,            incrihgaps,         {.i = -1 } },
+    { MODALT,                                     XK_Left,            incrivgaps,         {.i = -1 } },
+    { MODALT,                                     XK_Right,           incrivgaps,         {.i = +1 } },
 
-
-    // outer gaps
-    { MODALT,                                     XK_Page_Up,         incrgaps,           {.i = -1 } },
-    { MODALT,                                     XK_Page_Down,       incrgaps,           {.i = +1 } },
-
-    { MODALT,                    XK_Up,      incrihgaps,     {.i = +1 } },
-    { MODALT,                    XK_Down,      incrihgaps,     {.i = -1 } },
-    { MODALT,                    XK_Left,      incrivgaps,     {.i = -1 } },
-    { MODALT,                    XK_Right,      incrivgaps,     {.i = +1 } },
-    { MODALT | ControlMask,              XK_Up,      incrohgaps,     {.i = +1 } },
-    { MODALT | ControlMask,              XK_Down,      incrohgaps,     {.i = -1 } },
-    { MODALT | ControlMask,              XK_Left,      incrovgaps,     {.i = -1 } },
-    { MODALT | ControlMask,              XK_Right,      incrovgaps,     {.i = +1 } },
+    // v outer gaps
+    { MODALT | ControlMask,                       XK_Up,              incrohgaps,         {.i = +1 } },
+    { MODALT | ControlMask,                       XK_Down,            incrohgaps,         {.i = -1 } },
+    { MODALT | ControlMask,                       XK_Left,            incrovgaps,         {.i = -1 } },
+    { MODALT | ControlMask,                       XK_Right,           incrovgaps,         {.i = +1 } },
 
 };
