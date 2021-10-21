@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
+
+##
+## * https://www.utf8icons.com/search?query=clock
+##
+
+
 interval=0
 
 clock() {
-	printf "^c#222526^ ^b#6080a0^ 󱑆 "
+	#printf "^c#222526^ ^b#6080a0^ 󱑆 "
+	printf "^c#222526^ ^b#6080a0^ 🕐 "
 	printf "^c#222526^^b#6f8faf^ $(date '+%a, %Y-%m-%d %H:%M:%S') "
 }
 
