@@ -1,5 +1,5 @@
 
-# cordwm
+# Cordwm (Dynamic window manager for X from Chadwm and Dwm)
 
 ## Subject
 
