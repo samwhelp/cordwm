@@ -62,13 +62,13 @@ WM_CLASS(STRING) = "dwmsystray", "dwmsystray"
 ### Clone
 
 ``` sh
-git clone https://github.com/samwhelp/archcraft-openbox-style-select.git
+git clone https://github.com/samwhelp/cordwm.git
 ```
 
 ### Cd Work Dir
 
 ``` sh
-cd archcraft-openbox-style-select
+cd cordwm
 ```
 
 ### Prepare Build Essential
