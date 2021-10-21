@@ -3,7 +3,12 @@
 # Mousebind
 
 
-## button definitions
+## Config File
+
+* [style/mousebind/default.h](https://github.com/samwhelp/cordwm/blob/main/asset/src/cordwm/style/mousebind/default.h)
+
+
+## Button Definitions
 | click         | event mask |  button    |  function     | argument      |
 | ------------- | ---------- | ---------- | ------------- | ------------- |
 | ClkLtSymbol   |   0        |  Button1   | setlayout     | 0             |
