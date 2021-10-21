@@ -1,6 +1,15 @@
 
 # cordwm
 
+## Subject
+
+* [Orginal Project](#orginal-project)
+* [New Project](#new-project)
+* [Docs](#docs)
+* [Note](#note)
+* [How to Install](#how-to-install)
+* [Reference](#reference)
+
 
 ## Orginal Project
 
@@ -11,6 +20,9 @@
 
 * [cordwm](https://github.com/samwhelp/cordwm)
 
+> This project is for [archcraft-adjustment-iso-profile](https://github.com/samwhelp/archcraft-adjustment-iso-profile/blob/main/iso-profile/openbox/adjustment-openbox-with-tint/profile/packages.x86_64#L768).
+
+> But you can [build and install]((#how-to-install)) for yourself.
 
 ## Docs
 
@@ -40,6 +52,82 @@ WM_CLASS(STRING) = "dwm", "dwm"
 
 ```
 WM_CLASS(STRING) = "dwmsystray", "dwmsystray"
+```
+
+
+## How to Install
+
+### Clone
+
+``` sh
+git clone https://github.com/samwhelp/archcraft-openbox-style-select.git
+```
+
+### Cd Work Dir
+
+``` sh
+cd archcraft-openbox-style-select
+```
+
+### Prepare Build Essential
+
+run to install [base-devel](https://archlinux.org/groups/x86_64/base-devel/)
+
+``` sh
+make prepare
+```
+
+### Build Package
+
+run to build package
+
+``` sh
+make build
+```
+
+or run
+
+``` sh
+./build.sh
+```
+
+### Install Package
+
+
+run to install package
+
+``` sh
+make install
+```
+
+or run
+
+``` sh
+make reinstall
+```
+
+### List Package Files
+
+run to show package files
+
+``` sh
+make list
+```
+
+### Uninstall
+
+run to uninstall package
+
+``` sh
+make uninstall
+```
+
+### Clean
+
+run to clean some file after build
+
+``` sh
+make clean
 ```
 
 
