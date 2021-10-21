@@ -1,5 +1,7 @@
 
-# Cordwm (Dynamic window manager for X from Chadwm and Dwm)
+# Cordwm
+
+[Cordwm](https://github.com/samwhelp/cordwm) (Dynamic window manager for X from Chadwm and Dwm)
 
 ## Subject
 
