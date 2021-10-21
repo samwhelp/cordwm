@@ -187,10 +187,10 @@ static Key keys[] = {
 
 
     // ## TODO:
-    //{ MODALT,                                     XK_0,               focusmon,           {.i = -1 } },
-    //{ MODALT,                                     XK_0,               focusmon,           {.i = +1 } },
-    //{ MODALT,                                     XK_0,               tagmon,             {.i = -1 } },
-    //{ MODALT,                                     XK_0,               tagmon,             {.i = +1 } },
+    { MODWIN,                                     XK_minus,           focusmon,           {.i = -1 } },
+    { MODWIN,                                     XK_equal,           focusmon,           {.i = +1 } },
+    { MODWIN,                                     XK_bracketleft,     tagmon,             {.i = -1 } },
+    { MODWIN,                                     XK_bracketright,    tagmon,             {.i = +1 } },
 
 
     // ## VolumeControl:
