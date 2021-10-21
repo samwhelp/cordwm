@@ -1,5 +1,13 @@
 
 
+// https://github.com/TaylanTatli/dwm/blob/master/config.h#L13
+/* mbp-mappings */
+#define XF86AudioMute              0x1008ff12
+#define XF86AudioLowerVolume       0x1008ff11
+#define XF86AudioRaiseVolume       0x1008ff13
+#define XF86TouchpadToggle         0x1008ffa9
+
+
 #define TAGKEYS(KEY,TAG) \
     { MODALT,                                     KEY,                view,               {.ui = 1 << TAG} }, \
     { MODWIN,                                     KEY,                tag,                {.ui = 1 << TAG} }, \
@@ -32,10 +40,10 @@ static Key keys[] = {
     // ## Terminal:
     { MODALT,                                     XK_Return,          spawn,              SHCMD("sakura") },
     { MODALT | ShiftMask,                         XK_a,               spawn,              SHCMD("sakura") },
-    { MODALT | ControlMask,                       XK_a,               spawn,              SHCMD("cordwm-focus-ctrl the_sakura") },
+    //{ MODALT | ControlMask,                       XK_a,               spawn,              SHCMD("cordwm-focus-ctrl the_sakura") },
 
     { MODALT | ShiftMask,                         XK_t,               spawn,              SHCMD("xfce4-terminal") },
-    { MODALT | ControlMask,                       XK_t,               spawn,              SHCMD("cordwm-focus-ctrl the_xfce4_terminal") },
+    //{ MODALT | ControlMask,                       XK_t,               spawn,              SHCMD("cordwm-focus-ctrl the_xfce4_terminal") },
 
 
     // ## Rofi:
@@ -51,11 +59,11 @@ static Key keys[] = {
 
 
     // ## App / Focus:
-    { MODALT | ControlMask,                       XK_f,               spawn,              SHCMD("cordwm-focus-ctrl the_pcmanfm_qt") },
-    { MODALT | ControlMask,                       XK_g,               spawn,              SHCMD("cordwm-focus-ctrl the_thunar") },
-    { MODALT | ControlMask,                       XK_b,               spawn,              SHCMD("cordwm-focus-ctrl the_firefox") },
-    { MODALT | ControlMask,                       XK_e,               spawn,              SHCMD("cordwm-focus-ctrl the_atom") },
-    { MODALT | ControlMask,                       XK_r,               spawn,              SHCMD("cordwm-focus-ctrl the_mousepad") },
+    //{ MODALT | ControlMask,                       XK_f,               spawn,              SHCMD("cordwm-focus-ctrl the_pcmanfm_qt") },
+    //{ MODALT | ControlMask,                       XK_g,               spawn,              SHCMD("cordwm-focus-ctrl the_thunar") },
+    //{ MODALT | ControlMask,                       XK_b,               spawn,              SHCMD("cordwm-focus-ctrl the_firefox") },
+    //{ MODALT | ControlMask,                       XK_e,               spawn,              SHCMD("cordwm-focus-ctrl the_atom") },
+    //{ MODALT | ControlMask,                       XK_r,               spawn,              SHCMD("cordwm-focus-ctrl the_mousepad") },
 
 
     // ## Wallpaper :
@@ -148,5 +156,33 @@ static Key keys[] = {
     //{ MODALT,                                     XK_0,               tagmon,             {.i = +1 } },
 
     // ## TODO: Gaps
+
+
+    // ## VolumeControl:
+    { MODALT | ShiftMask,                         XK_v,               spawn,              SHCMD("mate-volume-control") },
+
+    // ## VolumeToggleMute
+    { MODALT,                                     XK_m,               spawn,              SHCMD("amixer -q -D pulse sset Master toggle") },
+
+    // ## VolumeDecrease
+    { MODALT | ShiftMask,                         XK_comma,           spawn,              SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
+
+    // ## VolumeIncrease
+    { MODALT | ShiftMask,                         XK_period,          spawn,              SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
+
+    // ## VolumeDecreaseSlowly
+    { MODALT | ControlMask,                       XK_comma,           spawn,              SHCMD("amixer -q -D pulse sset Master 1%- unmute") },
+
+    // ## VolumeIncreaseSlowly
+    { MODALT | ControlMask,                       XK_period,          spawn,              SHCMD("amixer -q -D pulse sset Master 1%+ unmute") },
+
+    // ## VolumeToggleMute
+    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master toggle") },
+
+    // ## VolumeDecrease
+    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
+
+    // ## VolumeIncrease
+    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
 
 };
