@@ -97,7 +97,8 @@ static Key keys[] = {
     { MODWIN,                                     XK_comma,           setborderpx,        {.i = -1 } },
     { MODWIN,                                     XK_period,          setborderpx,        {.i = +1 } },
     { MODWIN,                                     XK_slash,           setborderpx,        {.i = default_border } },
-    { MODWIN,                                     XK_space,           setborderpx,        {.i = zero_border } },
+    { MODWIN,                                     XK_semicolon,       setborderpx,        {.i = zero_border } },
+    //{ MODWIN,                                     XK_space,           setborderpx,        {.i = zero_border } },
 
 
     // ## Window / Close:
@@ -143,6 +144,20 @@ static Key keys[] = {
     { MODALT,                                     XK_Tab,             cyclelayout,        {.i = +1 } },
     { MODALT,                                     XK_k,               cyclelayout,        {.i = -1 } },
     { MODALT,                                     XK_j,               cyclelayout,        {.i = +1 } },
+
+    // ## Layout / Master Number:
+    { MODALT,                                     XK_comma,           incnmaster,         {.i = -1 } },
+    { MODALT,                                     XK_period,          incnmaster,         {.i = +1 } },
+
+    // ## Layout / Master Width:
+    { MODALT | ControlMask,                         XK_h,               setmfact,           {.f = -0.05} },
+    { MODALT | ControlMask,                         XK_l,               setmfact,           {.f = +0.05} },
+    //{ MODALT | ControlMask,                         XK_u,               setmfact,           {.f = 0.00} },
+
+
+    { MODALT | ControlMask,                         XK_k,               setcfact,           {.f = -0.25} },
+    { MODALT | ControlMask,                         XK_j,               setcfact,           {.f = +0.25} },
+    { MODALT | ControlMask,                         XK_i,               setcfact,           {.f =  0.00} },
 
     // ## Layout / Toggle Show Bar:
     { MODALT,                                     XK_b,               togglebar,          {.i = +1 } },
@@ -205,5 +220,35 @@ static Key keys[] = {
     // ## VolumeIncrease
     { 0,                                          XF86AudioRaiseVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
 
+
+    // ## Gaps:
+
+    { MODALT,                                     XK_Home,            defaultgaps,        {0} },
+    { MODALT,                                     XK_End,             togglegaps,         {0} },
+
+    { ControlMask,                                XK_Escape,          defaultgaps,        {0} },
+    { MODALT,                                     XK_Escape,          togglegaps,         {0} },
+
+    // inner gaps
+    { MODALT,                                     XK_bracketleft,     incrigaps,          {.i = -1 } },
+    { MODALT,                                     XK_bracketright,    incrigaps,          {.i = +1 } },
+
+    // overall gaps
+    { MODALT,                                     XK_minus,           incrogaps,          {.i = -1 } },
+    { MODALT,                                     XK_equal,           incrogaps,          {.i = +1 } },
+
+
+    // outer gaps
+    { MODALT,                                     XK_Page_Up,         incrgaps,           {.i = -1 } },
+    { MODALT,                                     XK_Page_Down,       incrgaps,           {.i = +1 } },
+
+    { MODALT,                    XK_Up,      incrihgaps,     {.i = +1 } },
+    { MODALT,                    XK_Down,      incrihgaps,     {.i = -1 } },
+    { MODALT,                    XK_Left,      incrivgaps,     {.i = -1 } },
+    { MODALT,                    XK_Right,      incrivgaps,     {.i = +1 } },
+    { MODALT | ControlMask,              XK_Up,      incrohgaps,     {.i = +1 } },
+    { MODALT | ControlMask,              XK_Down,      incrohgaps,     {.i = -1 } },
+    { MODALT | ControlMask,              XK_Left,      incrovgaps,     {.i = -1 } },
+    { MODALT | ControlMask,              XK_Right,      incrovgaps,     {.i = +1 } },
 
 };
