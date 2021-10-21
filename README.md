@@ -14,9 +14,11 @@
 
 ## Docs
 
-* [keybind](asset/usr/share/cordwm/docs/spec-keybind.md)
-* [mousebind](asset/usr/share/cordwm/docs/spec-mousebind.md)
-* [boot](asset/usr/share/cordwm/docs/spec-boot.md)
+| Spec |
+| --- |
+| [keybind](asset/usr/share/cordwm/docs/spec-keybind.md) |
+| [mousebind](asset/usr/share/cordwm/docs/spec-mousebind.md) |
+| [boot](asset/usr/share/cordwm/docs/spec-boot.md) |
 
 
 ## Note
