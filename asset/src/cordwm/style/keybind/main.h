@@ -1,5 +1,35 @@
 
 
+/*
+
+run
+
+``` sh
+pacman -Ql | grep keysymdef.h
+```
+
+show
+
+```
+python-xlib /usr/lib/python3.9/site-packages/Xlib/keysymdef/hebrew.py
+xorgproto /usr/include/X11/keysymdef.h
+```
+
+run
+
+``` sh
+less /usr/include/X11/keysymdef.h
+```
+
+run
+
+```
+grep 'XK_Return' /usr/include/X11/keysymdef.h
+```
+
+*/
+
+
 #define TAGKEYS(KEY,TAG) \
     { MODALT,                                     KEY,                view,               {.ui = 1 << TAG} }, \
     { MODWIN,                                     KEY,                tag,                {.ui = 1 << TAG} }, \
@@ -147,8 +177,6 @@ static Key keys[] = {
     //{ MODALT,                                     XK_0,               tagmon,             {.i = -1 } },
     //{ MODALT,                                     XK_0,               tagmon,             {.i = +1 } },
 
-    // ## TODO: Gaps
-
 
     // ## VolumeControl:
     { MODALT | ShiftMask,                         XK_v,               spawn,              SHCMD("mate-volume-control") },
@@ -176,5 +204,6 @@ static Key keys[] = {
 
     // ## VolumeIncrease
     { 0,                                          XF86AudioRaiseVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
+
 
 };

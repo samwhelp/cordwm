@@ -56,6 +56,34 @@ WM_CLASS(STRING) = "dwm", "dwm"
 WM_CLASS(STRING) = "dwmsystray", "dwmsystray"
 ```
 
+### keysymdef
+
+run
+
+``` sh
+pacman -Ql | grep keysymdef.h
+```
+
+show
+
+```
+python-xlib /usr/lib/python3.9/site-packages/Xlib/keysymdef/hebrew.py
+xorgproto /usr/include/X11/keysymdef.h
+```
+
+run
+
+``` sh
+less /usr/include/X11/keysymdef.h
+```
+
+
+run
+
+```
+grep 'XK_Return' /usr/include/X11/keysymdef.h
+```
+
 
 ## How to Install
 
