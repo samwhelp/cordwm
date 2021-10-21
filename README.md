@@ -19,6 +19,28 @@
 * [boot](asset/usr/share/cordwm/docs/spec-boot.md)
 
 
+## Note
+
+### transparent: dwm bar
+
+set [picom.conf](asset/usr/share/cordwm/config/cordwm/share/style-profile/main/picom/picom.conf#L231)
+
+```
+  "90:class_g     = 'dwm'",
+  "90:class_g     = 'dwmsystray'",
+```
+
+use `xprop` to find WM_CLASS
+
+```
+WM_CLASS(STRING) = "dwm", "dwm"
+```
+
+```
+WM_CLASS(STRING) = "dwmsystray", "dwmsystray"
+```
+
+
 ## Reference
 
 * https://wiki.archlinux.org/title/Creating_packages
