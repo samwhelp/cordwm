@@ -1,13 +1,5 @@
 
 
-// https://github.com/TaylanTatli/dwm/blob/master/config.h#L13
-/* mbp-mappings */
-#define XF86AudioMute              0x1008ff12
-#define XF86AudioLowerVolume       0x1008ff11
-#define XF86AudioRaiseVolume       0x1008ff13
-#define XF86TouchpadToggle         0x1008ffa9
-
-
 #define TAGKEYS(KEY,TAG) \
     { MODALT,                                     KEY,                view,               {.ui = 1 << TAG} }, \
     { MODWIN,                                     KEY,                tag,                {.ui = 1 << TAG} }, \
@@ -180,9 +172,9 @@ static Key keys[] = {
     { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master toggle") },
 
     // ## VolumeDecrease
-    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
+    { 0,                                          XF86AudioLowerVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
 
     // ## VolumeIncrease
-    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
+    { 0,                                          XF86AudioRaiseVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
 
 };

@@ -1,7 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
-#define XF86MonBrightnessDown 0x1008ff03
-#define XF86MonBrightnessUp 0x1008ff02
+#define XF86MonBrightnessDown                  0x1008ff03
+#define XF86MonBrightnessUp                    0x1008ff02
+
+// https://github.com/TaylanTatli/dwm/blob/master/config.h#L13
+/* mbp-mappings */
+#define XF86AudioMute                          0x1008ff12
+#define XF86AudioLowerVolume                   0x1008ff11
+#define XF86AudioRaiseVolume                   0x1008ff13
+#define XF86TouchpadToggle                     0x1008ffa9
+
 
 /* appearance */
 static const unsigned int borderpx           = 4;           /* border pixel of windows */
