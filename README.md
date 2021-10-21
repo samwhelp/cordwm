@@ -20,7 +20,7 @@
 
 * [cordwm](https://github.com/samwhelp/cordwm)
 
-> This project is for [archcraft-adjustment-iso-profile](https://github.com/samwhelp/archcraft-adjustment-iso-profile/blob/main/iso-profile/openbox/adjustment-openbox-with-tint/profile/packages.x86_64#L768).
+> This project is created for [archcraft-adjustment-iso-profile](https://github.com/samwhelp/archcraft-adjustment-iso-profile/blob/main/iso-profile/openbox/adjustment-openbox-with-tint/profile/packages.x86_64#L768).
 
 > But you can [build and install]((#how-to-install)) for yourself.
 
