@@ -11,6 +11,7 @@
 * [Launch App](#launch-app)
 * [Wallpaper](#wallpaper)
 * [Window](#window)
+* [Layout](#layout)
 
 
 ## Config File
@@ -143,3 +144,28 @@
 | ----------------- | -------------- |
 | `Win + m`         | Move to Master |
 | `Win + r`         | Move to Master |
+
+
+## Layout
+
+### Layout / Specific Layout
+
+| Keybind           | Note           |
+| ----------------- | -------------- |
+| `Win + w`         | Set to Monocle |
+| `Win + e`         | Set to Tile    |
+
+
+### Layout / Cycle Layout
+
+| Keybind           | Note               |
+| ----------------- | ------------------ |
+| `Alt + grave`     | Switch to Previous |
+| `Alt + Tab`       | Switch to Next     |
+
+> grave means `
+
+| Keybind           | Note               |
+| ----------------- | ------------------ |
+| `Win + k`         | Switch to Previous |
+| `Win + j`         | Switch to Next     |
