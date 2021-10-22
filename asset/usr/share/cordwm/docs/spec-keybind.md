@@ -120,3 +120,18 @@
 | ----------------- | --------------- |
 | `Win + h`         | Focus Previous  |
 | `Win + l`         | Focus Next      |
+
+
+### Window / Move Stack
+
+| Keybind           | Note          |
+| ----------------- | ------------- |
+| `Win + grave`     | Move Previous |
+| `Win + Tab`       | Move Next     |
+
+> grave means `
+
+| Keybind           | Note          |
+| ----------------- | ------------- |
+| `Win + k`         | Move Previous |
+| `Win + j`         | Move Next     |
