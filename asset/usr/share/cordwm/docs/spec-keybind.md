@@ -71,6 +71,9 @@
 | ----------------- | ---------------------- |
 | `Win + ,`         | Decrease Window Border |
 | `Win + .`         | Increase Window Border |
+
+| Keybind           | Note                   |
+| ----------------- | ---------------------- |
 | `Win + /`         | Default Window Border  |
 | `Win + ;`         | Zero Window Border     |
 
@@ -89,3 +92,31 @@
 | `Win + x`         | Hide Window    |
 | `Win + Ctrl + x`  | Restore Window |
 | `Win + c`         | Restore Window |
+
+
+### Window / Toggle Fullscreen
+
+| Keybind           | Note              |
+| ----------------- | ----------------- |
+| `Win + f`         | Toggle Fullscreen |
+| `Win + F11`       | Toggle Fullscreen |
+
+
+### Window / Toggle Floating
+
+| Keybind           | Note            |
+| ----------------- | --------------- |
+| `Win + v`         | Toggle Floating |
+
+
+### Window / Focus Stack
+
+| Keybind           | Note            |
+| ----------------- | --------------- |
+| `Win + a`         | Focus Previous  |
+| `Win + s`         | Focus Next      |
+
+| Keybind           | Note            |
+| ----------------- | --------------- |
+| `Win + h`         | Focus Previous  |
+| `Win + l`         | Focus Next      |
