@@ -105,7 +105,7 @@ static Key keys[] = {
     { MODWIN,                                     XK_q,               killclient,         {0} },
 
     // ## Window / Toggle Hide:
-    { MODWIN | ShiftMask,                         XK_x,               restorewin,         {0} },
+    { MODWIN | ControlMask,                       XK_x,               restorewin,         {0} },
     { MODWIN,                                     XK_x,               hidewin,            {0} },
     { MODWIN,                                     XK_c,               restorewin,         {0} },
 

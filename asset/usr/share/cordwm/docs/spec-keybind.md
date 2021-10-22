@@ -65,7 +65,7 @@
 
 ## Window
 
-### Window Border
+### Window / Border
 
 | Keybind           | Note                   |
 | ----------------- | ---------------------- |
@@ -75,8 +75,17 @@
 | `Win + ;`         | Zero Window Border     |
 
 
-### Window Close
+### Window / Close
 
 | Keybind           | Note         |
 | ----------------- | ------------ |
 | `Win + q`         | Close Window |
+
+
+### Window / Toggle Hide
+
+| Keybind           | Note           |
+| ----------------- | -------------- |
+| `Win + x`         | Hide Window    |
+| `Win + Ctrl + x`  | Restore Window |
+| `Win + c`         | Restore Window |
