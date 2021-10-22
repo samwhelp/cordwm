@@ -9,6 +9,9 @@
 * [Terminal](#terminal)
 * [Rofi](#rofi)
 * [Launch App](#launch-app)
+* [Wallpaper](#wallpaper)
+* [Window](#window)
+
 
 ## Config File
 
@@ -50,3 +53,30 @@
 | `Alt + Shift + g` | Launch File Manager  (thunar)     |
 | `Alt + Shift + b` | Launch Web Browser   (firefox)    |
 | `Alt + Shift + e` | Launch Text Editor   (mousepad)   |
+
+
+## Wallpaper
+
+| Keybind           | Note                                     |
+| ----------------- | ---------------------------------------- |
+| `Alt + w`         | Shuf     (cordwm-wallpaper-ctrl shuf)    |
+| `Alt + Ctrl + w`  | Default  (cordwm-wallpaper-ctrl default) |
+
+
+## Window
+
+### Window Border
+
+| Keybind           | Note                   |
+| ----------------- | ---------------------- |
+| `Win + ,`         | Decrease Window Border |
+| `Win + .`         | Increase Window Border |
+| `Win + /`         | Default Window Border  |
+| `Win + ;`         | Zero Window Border     |
+
+
+### Window Close
+
+| Keybind           | Note         |
+| ----------------- | ------------ |
+| `Win + q`         | Close Window |
