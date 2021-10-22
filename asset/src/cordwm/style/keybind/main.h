@@ -128,7 +128,7 @@ static Key keys[] = {
 	{ MODWIN,                                     XK_k,               movestack,          {.i = -1 } },
     { MODWIN,                                     XK_j,               movestack,          {.i = +1 } },
 
-	// ## Window / Move Stack / Top (Master) :
+    // ## Window / Move Stack / Top (Master) :
     { MODWIN,                                     XK_m,               zoom,               {0} },
     { MODWIN,                                     XK_r,               zoom,               {0} },
 

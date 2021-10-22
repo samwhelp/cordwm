@@ -124,14 +124,22 @@
 
 ### Window / Move Stack
 
-| Keybind           | Note          |
-| ----------------- | ------------- |
-| `Win + grave`     | Move Previous |
-| `Win + Tab`       | Move Next     |
+| Keybind           | Note             |
+| ----------------- | ---------------- |
+| `Win + grave`     | Move to Previous |
+| `Win + Tab`       | Move to Next     |
 
 > grave means `
 
-| Keybind           | Note          |
-| ----------------- | ------------- |
-| `Win + k`         | Move Previous |
-| `Win + j`         | Move Next     |
+| Keybind           | Note             |
+| ----------------- | ---------------- |
+| `Win + k`         | Move to Previous |
+| `Win + j`         | Move to Next     |
+
+
+### Window / Move Stack / Top (Master)
+
+| Keybind           | Note           |
+| ----------------- | -------------- |
+| `Win + m`         | Move to Master |
+| `Win + r`         | Move to Master |
