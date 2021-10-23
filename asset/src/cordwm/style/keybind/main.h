@@ -69,9 +69,9 @@ static Key keys[] = {
 
 
     // ## Rofi:
-    { MODALT | ShiftMask,                         XK_d,               spawn,              SHCMD("rofi -show drun") },
-    { MODALT | ShiftMask,                         XK_w,               spawn,              SHCMD("rofi -show window") },
-    { MODALT | ShiftMask,                         XK_r,               spawn,              SHCMD("rofi -show run") },
+    { MODALT | ShiftMask,                         XK_d,               spawn,              SHCMD("cordwm-rofi-ctrl show_drun") },
+    { MODALT | ShiftMask,                         XK_w,               spawn,              SHCMD("cordwm-rofi-ctrl show_window") },
+    { MODALT | ShiftMask,                         XK_r,               spawn,              SHCMD("cordwm-rofi-ctrl show_run") },
 
     // ## App / Launch:
     { MODALT | ShiftMask,                         XK_f,               spawn,              SHCMD("pcmanfm-qt") },

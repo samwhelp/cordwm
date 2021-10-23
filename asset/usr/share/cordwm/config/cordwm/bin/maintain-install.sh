@@ -91,6 +91,9 @@ mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-focus-ctrl $HOME/.config/cordwm/bin/cordwm-focus-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-focus-ctrl" "$HOME/.config/cordwm/bin/cordwm-focus-ctrl"
 
+	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-rofi-ctrl $HOME/.config/cordwm/bin/cordwm-rofi-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-rofi-ctrl" "$HOME/.config/cordwm/bin/cordwm-rofi-ctrl"
+
 
 }
 
