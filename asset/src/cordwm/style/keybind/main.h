@@ -194,31 +194,31 @@ static Key keys[] = {
 
 
     // ## VolumeControl:
-    { MODALT | ShiftMask,                         XK_v,               spawn,              SHCMD("mate-volume-control") },
+    { MODALT | ShiftMask,                         XK_v,               spawn,              SHCMD("cordwm-volume-ctrl volume_control") },
 
     // ## VolumeToggleMute
-    { MODALT,                                     XK_m,               spawn,              SHCMD("amixer -q -D pulse sset Master toggle") },
+    { MODALT,                                     XK_m,               spawn,              SHCMD("cordwm-volume-ctrl volume_toggle_mute") },
 
     // ## VolumeDecrease
-    { MODALT | ShiftMask,                         XK_comma,           spawn,              SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
+    { MODALT | ShiftMask,                         XK_comma,           spawn,              SHCMD("cordwm-volume-ctrl volume_decrease") },
 
     // ## VolumeIncrease
-    { MODALT | ShiftMask,                         XK_period,          spawn,              SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
+    { MODALT | ShiftMask,                         XK_period,          spawn,              SHCMD("cordwm-volume-ctrl volume_increase") },
 
     // ## VolumeDecreaseSlowly
-    { MODALT | ControlMask,                       XK_comma,           spawn,              SHCMD("amixer -q -D pulse sset Master 1%- unmute") },
+    { MODALT | ControlMask,                       XK_comma,           spawn,              SHCMD("cordwm-volume-ctrl volume_decrease_slowly") },
 
     // ## VolumeIncreaseSlowly
-    { MODALT | ControlMask,                       XK_period,          spawn,              SHCMD("amixer -q -D pulse sset Master 1%+ unmute") },
+    { MODALT | ControlMask,                       XK_period,          spawn,              SHCMD("cordwm-volume-ctrl volume_increase_slowly") },
 
     // ## VolumeToggleMute
-    { 0,                                          XF86AudioMute,      spawn,              SHCMD("amixer -q -D pulse sset Master toggle") },
+    { 0,                                          XF86AudioMute,      spawn,              SHCMD("cordwm-volume-ctrl volume_toggle_mute") },
 
     // ## VolumeDecrease
-    { 0,                                          XF86AudioLowerVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%- unmute") },
+    { 0,                                          XF86AudioLowerVolume,      spawn,       SHCMD("cordwm-volume-ctrl volume_decrease") },
 
     // ## VolumeIncrease
-    { 0,                                          XF86AudioRaiseVolume,      spawn,       SHCMD("amixer -q -D pulse sset Master 5%+ unmute") },
+    { 0,                                          XF86AudioRaiseVolume,      spawn,       SHCMD("cordwm-volume-ctrl volume_increase") },
 
 
     // ## Gaps:

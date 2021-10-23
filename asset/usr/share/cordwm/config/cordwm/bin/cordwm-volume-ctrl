@@ -25,7 +25,7 @@ cmd_var_init () {
 	THE_CMD_DIR_PATH="$THE_BIN_DIR_PATH"
 
 	if [ "none$THE_CMD_FILE_NAME" = 'none' ]; then
-		THE_CMD_FILE_NAME="cordwm-app-ctrl"
+		THE_CMD_FILE_NAME="cordwm-volume-ctrl"
 	fi
 
 	THE_CMD_FILE_PATH="$THE_CMD_DIR_PATH/$THE_CMD_FILE_NAME"
@@ -63,9 +63,9 @@ mod_app_run () {
 ### Head: SubCmd / run
 ##
 
-sub_run_run () {
-	mod_app_run "$@"
-}
+# sub_run_run () {
+# 	mod_app_run "$@"
+# }
 
 
 ##
@@ -74,210 +74,180 @@ sub_run_run () {
 
 
 ################################################################################
-### Head: Model / app / sakura
+### Head: Model / Volume / mate-volume-control
 ##
 
-mod_app_run_sakura () {
+mod_app_run_mate_volume_control () {
 
-	mod_app_run "sakura"
+	mod_app_run "mate-volume-control"
 
 }
 
 
 ##
-### Tail: Model / app / sakura
+### Tail: Model / Volume / mate-volume-control
 ################################################################################
 
 
 ################################################################################
-### Head: SubCmd / app / terminal
+### Head: SubCmd / Volume / Control
 ##
 
-sub_run_run_terminal () {
-	mod_app_run_sakura "$@"
+sub_run_volume_control () {
+	mod_app_run_mate_volume_control "$@"
 }
 
 ##
-### Tail: SubCmd / app / terminal
+### Tail: SubCmd / Volume / Control
 ################################################################################
 
 
 
 
 ################################################################################
-### Head: Model / app / xfce4_terminal
+### Head: Model / Volume / ToggleMute
 ##
 
-mod_app_run_xfce4_terminal () {
+mod_app_amixer_volume_toggle_mute () {
 
-	mod_app_run "xfce4-terminal"
-
-}
-
-
-##
-### Tail: Model / app / xfce4_terminal
-################################################################################
-
-
-################################################################################
-### Head: SubCmd / app / terminal_1
-##
-
-sub_run_run_terminal_1 () {
-	mod_app_run_xfce4_terminal "$@"
-}
-
-##
-### Tail: SubCmd / app / terminal_1
-################################################################################
-
-
-################################################################################
-### Head: Model / app / atom
-##
-
-mod_app_run_atom () {
-
-	mod_app_run "atom"
+	amixer -q -D pulse sset Master toggle &
 
 }
 
 
 ##
-### Tail: Model / app / atom
+### Tail: Model / Volume / ToggleMute
 ################################################################################
 
 
 ################################################################################
-### Head: SubCmd / app / atom
+### Head: SubCmd / Volume / ToggleMute
 ##
 
-sub_run_run_text_editor_1 () {
-	mod_app_run_atom "$@"
+sub_run_volume_toggle_mute () {
+	mod_app_amixer_volume_toggle_mute "$@"
 }
 
 ##
-### Tail: SubCmd / app / atom
+### Tail: SubCmd / Volume / ToggleMute
 ################################################################################
 
 
-
 ################################################################################
-### Head: Model / app / mousepad
+### Head: Model / Volume / VolumeDecrease
 ##
 
-mod_app_run_mousepad () {
+mod_app_amixer_volume_decrease () {
 
-	mod_app_run "mousepad"
-
-}
-
-
-##
-### Tail: Model / app / mousepad
-################################################################################
-
-
-################################################################################
-### Head: SubCmd / app / text_editor
-##
-
-sub_run_run_text_editor () {
-	mod_app_run_mousepad "$@"
-}
-
-##
-### Tail: SubCmd / app / text_editor
-################################################################################
-
-
-################################################################################
-### Head: Model / app / firefox
-##
-
-mod_app_run_firefox () {
-
-	mod_app_run "firefox"
+	amixer -q -D pulse sset Master 5%- unmute &
 
 }
 
 
 ##
-### Tail: Model / app / firefox
+### Tail: Model / Volume / VolumeDecrease
 ################################################################################
 
 
 ################################################################################
-### Head: SubCmd / app / web_browser
+### Head: SubCmd / volume / VolumeDecrease
 ##
 
-sub_run_run_web_browser () {
-	mod_app_run_firefox "$@"
+sub_run_volume_decrease () {
+	mod_app_amixer_volume_decrease "$@"
 }
 
 ##
-### Tail: SubCmd / app / web_browser
+### Tail: SubCmd / volume / VolumeDecrease
 ################################################################################
 
 
+
 ################################################################################
-### Head: Model / app / pcmanfm_qt
+### Head: Model / Volume / VolumeIncrease
 ##
 
-mod_app_run_pcmanfm_qt () {
+mod_app_amixer_volume_increase () {
 
-	mod_app_run "pcmanfm-qt"
-
-}
-
-
-##
-### Tail: Model / app / pcmanfm_qt
-################################################################################
-
-
-################################################################################
-### Head: SubCmd / app / file_manager
-##
-
-sub_run_run_file_manager () {
-	mod_app_run_pcmanfm_qt "$@"
-}
-
-##
-### Tail: SubCmd / app / file_manager
-################################################################################
-
-
-################################################################################
-### Head: Model / app / thunar
-##
-
-mod_app_run_thunar () {
-
-	mod_app_run "thunar"
+	amixer -q -D pulse sset Master 5%+ unmute &
 
 }
 
 
 ##
-### Tail: Model / app / thunar
+### Tail: Model / Volume / VolumeIncrease
 ################################################################################
 
 
 ################################################################################
-### Head: SubCmd / app / thunar
+### Head: SubCmd / Volume / VolumeIncrease
 ##
 
-sub_run_run_file_manager_1 () {
-	mod_app_run_thunar "$@"
+sub_run_volume_increase () {
+	mod_app_amixer_volume_increase "$@"
 }
 
 ##
-### Tail: SubCmd / app / thunar
+### Tail: SubCmd / Volume / VolumeIncrease
 ################################################################################
 
+
+################################################################################
+### Head: Model / Volume / VolumeDecreaseSlowly
+##
+
+mod_app_amixer_volume_decrease_slowly () {
+
+	amixer -q -D pulse sset Master 1%- unmute &
+
+}
+
+
+##
+### Tail: Model / Volume / VolumeDecreaseSlowly
+################################################################################
+
+
+################################################################################
+### Head: SubCmd / Volume / VolumeDecreaseSlowly
+##
+
+sub_run_volume_decrease_slowly () {
+	mod_app_amixer_volume_decrease_slowly "$@"
+}
+
+##
+### Tail: SubCmd / Volume / VolumeDecreaseSlowly
+################################################################################
+
+
+################################################################################
+### Head: Model / Volume / VolumeIncreaseSlowly
+##
+
+mod_app_amixer_volume_increase_slowly () {
+
+	amixer -q -D pulse sset Master 1%+ unmute &
+
+}
+
+
+##
+### Tail: Model / Volume / VolumeIncreaseSlowly
+################################################################################
+
+
+################################################################################
+### Head: SubCmd / Volume / VolumeIncreaseSlowly
+##
+
+sub_run_volume_increase_slowly () {
+	mod_app_amixer_volume_increase_slowly "$@"
+}
+
+##
+### Tail: SubCmd / Volume / VolumeIncreaseSlowly
+################################################################################
 
 
 
@@ -326,7 +296,7 @@ sub_cmd_find_function_name () {
 
 main_usage () {
 	##local cmd_name="$0"
-	local cmd_name="cordwm-app-ctrl"
+	local cmd_name="cordwm-volume-ctrl"
 
 cat << EOF
 Usage:
@@ -337,21 +307,15 @@ Example:
 	$ $cmd_name
 	$ $cmd_name help
 
-	$ $cmd_name run
-	$ $cmd_name run "atom"
+	$ $cmd_name volume_control
 
-	$ $cmd_name run_terminal
-	$ $cmd_name run_terminal_1
+	$ $cmd_name volume_toggle_mute
 
-	$ $cmd_name run_text_editor
-	$ $cmd_name run_text_editor_1
+	$ $cmd_name volume_decrease
+	$ $cmd_name volume_decrease_slowly
 
-	$ $cmd_name run_web_browser
-
-	$ $cmd_name run_file_manager
-	$ $cmd_name run_file_manager_1
-
-
+	$ $cmd_name volume_increase
+	$ $cmd_name volume_increase_slowly
 
 Debug:
 	$ export DEBUG_CORDWM=true
