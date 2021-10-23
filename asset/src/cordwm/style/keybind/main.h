@@ -60,11 +60,11 @@ static Key keys[] = {
     { MODALT | ShiftMask,                         XK_z,               spawn,              SHCMD("shutdown now") },
 
     // ## Terminal:
-    { MODALT,                                     XK_Return,          spawn,              SHCMD("sakura") },
-    { MODALT | ShiftMask,                         XK_a,               spawn,              SHCMD("sakura") },
+    { MODALT,                                     XK_Return,          spawn,              SHCMD("cordwm-app-ctrl run_terminal") },
+    { MODALT | ShiftMask,                         XK_a,               spawn,              SHCMD("cordwm-app-ctrl run_terminal") },
     //{ MODALT | ControlMask,                       XK_a,               spawn,              SHCMD("cordwm-focus-ctrl the_sakura") },
 
-    { MODALT | ShiftMask,                         XK_t,               spawn,              SHCMD("xfce4-terminal") },
+    { MODALT | ShiftMask,                         XK_t,               spawn,              SHCMD("cordwm-app-ctrl run_terminal_1") },
     //{ MODALT | ControlMask,                       XK_t,               spawn,              SHCMD("cordwm-focus-ctrl the_xfce4_terminal") },
 
 
@@ -74,10 +74,10 @@ static Key keys[] = {
     { MODALT | ShiftMask,                         XK_r,               spawn,              SHCMD("cordwm-rofi-ctrl show_run") },
 
     // ## App / Launch:
-    { MODALT | ShiftMask,                         XK_f,               spawn,              SHCMD("pcmanfm-qt") },
-    { MODALT | ShiftMask,                         XK_g,               spawn,              SHCMD("thunar") },
-    { MODALT | ShiftMask,                         XK_b,               spawn,              SHCMD("firefox") },
-    { MODALT | ShiftMask,                         XK_e,               spawn,              SHCMD("mousepad") },
+    { MODALT | ShiftMask,                         XK_f,               spawn,              SHCMD("cordwm-app-ctrl run_file_manager") },
+    { MODALT | ShiftMask,                         XK_g,               spawn,              SHCMD("cordwm-app-ctrl run_file_manager_1") },
+    { MODALT | ShiftMask,                         XK_b,               spawn,              SHCMD("cordwm-app-ctrl run_web_browser") },
+    { MODALT | ShiftMask,                         XK_e,               spawn,              SHCMD("cordwm-app-ctrl run_text_editor") },
 
 
     // ## App / Focus:
