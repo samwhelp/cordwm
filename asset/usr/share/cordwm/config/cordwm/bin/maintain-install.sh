@@ -96,10 +96,16 @@ mod_install_bin_ctrl () {
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-app-ctrl $HOME/.config/cordwm/bin/cordwm-app-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-app-ctrl" "$HOME/.config/cordwm/bin/cordwm-app-ctrl"
-	
-	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-app-ctrl $HOME/.config/cordwm/bin/cordwm-volume-ctrl"
-	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-app-ctrl" "$HOME/.config/cordwm/bin/cordwm-volume-ctrl"
-	
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-volume-ctrl $HOME/.config/cordwm/bin/cordwm-volume-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-volume-ctrl" "$HOME/.config/cordwm/bin/cordwm-volume-ctrl"
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/cordwm-screenshot-ctrl $HOME/.config/cordwm/bin/cordwm-screenshot-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/cordwm-screenshot-ctrl" "$HOME/.config/cordwm/bin/cordwm-screenshot-ctrl"
+
+
+
+
 
 }
 
