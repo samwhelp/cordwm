@@ -5,6 +5,31 @@
 run
 
 ``` sh
+pacman -Ql | grep X11/keysym.h
+```
+
+show
+
+```
+xorgproto /usr/include/X11/keysym.h
+```
+
+run
+
+``` sh
+grep '#include' /usr/include/X11/keysym.h
+```
+
+show
+
+```
+#include <X11/keysymdef.h>
+```
+
+
+run
+
+``` sh
 pacman -Ql | grep keysymdef.h
 ```
 
@@ -54,7 +79,7 @@ static Key keys[] = {
     //{ MODKEY,                                     XK_Return,          spawn,              {.v = termcmd }},
     //{ MODKEY,                                     XK_Return,          spawn,              SHCMD("~/.local/bin/./st_settings && st")},
 
-	// ## System:
+    // ## System:
     { MODALT | ShiftMask,                         XK_c,               quit,               {1} },
     { MODALT | ShiftMask,                         XK_x,               quit,               {0} },
     { MODALT | ShiftMask,                         XK_z,               spawn,              SHCMD("shutdown now") },
@@ -93,6 +118,11 @@ static Key keys[] = {
     { MODALT | ControlMask,                       XK_w,               spawn,              SHCMD("cordwm-wallpaper-ctrl default") },
 
 
+    // ## Screenshot :
+    { 0,                                          XK_Print,           spawn,              SHCMD("scrot") },
+    { MODALT,                                     XK_Print,           spawn,              SHCMD("scrot -s") },
+
+
     // ## Window / Border:
     { MODWIN,                                     XK_comma,           setborderpx,        {.i = -1 } },
     { MODWIN,                                     XK_period,          setborderpx,        {.i = +1 } },
@@ -125,7 +155,7 @@ static Key keys[] = {
     // ## Window / Move Stack :
     { MODWIN,                                     XK_grave,           movestack,          {.i = -1 } },
     { MODWIN,                                     XK_Tab,             movestack,          {.i = +1 } },
-	{ MODWIN,                                     XK_k,               movestack,          {.i = -1 } },
+    { MODWIN,                                     XK_k,               movestack,          {.i = -1 } },
     { MODWIN,                                     XK_j,               movestack,          {.i = +1 } },
 
     // ## Window / Move Stack / Top (Master) :
@@ -136,7 +166,7 @@ static Key keys[] = {
     { MODWIN,                                     XK_w,               setlayout,          {.v = &layouts[1]} },
     { MODWIN,                                     XK_e,               setlayout,          {.v = &layouts[0]} },
 
-	// ## Layout / Toggle tabmode
+    // ## Layout / Toggle tabmode
     { MODWIN,                                     XK_i,               tabmode,            { -1 } },
 
     // ## Layout / Cycle Layout:
