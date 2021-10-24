@@ -83,6 +83,11 @@ mod_app_run_mate_volume_control () {
 
 }
 
+mod_app_run_mate_volume_control_status_icon () {
+
+	mod_app_run "mate-volume-control-status-icon"
+
+}
 
 ##
 ### Tail: Model / Volume / mate-volume-control
@@ -97,11 +102,13 @@ sub_run_volume_control () {
 	mod_app_run_mate_volume_control "$@"
 }
 
+sub_run_volume_applet () {
+	mod_app_run_mate_volume_control_status_icon "$@"
+}
+
 ##
 ### Tail: SubCmd / Volume / Control
 ################################################################################
-
-
 
 
 ################################################################################
@@ -114,6 +121,11 @@ mod_app_amixer_volume_toggle_mute () {
 
 }
 
+mod_app_pactl_volume_toggle_mute () {
+
+	pactl set-sink-mute @DEFAULT_SINK@ toggle &
+
+}
 
 ##
 ### Tail: Model / Volume / ToggleMute
@@ -125,6 +137,7 @@ mod_app_amixer_volume_toggle_mute () {
 ##
 
 sub_run_volume_toggle_mute () {
+	#mod_app_pactl_volume_toggle_mute "$@"
 	mod_app_amixer_volume_toggle_mute "$@"
 }
 
@@ -143,6 +156,11 @@ mod_app_amixer_volume_decrease () {
 
 }
 
+mod_app_pactl_volume_decrease () {
+
+	pactl set-sink-volume @DEFAULT_SINK@ -5000 &
+
+}
 
 ##
 ### Tail: Model / Volume / VolumeDecrease
@@ -154,13 +172,13 @@ mod_app_amixer_volume_decrease () {
 ##
 
 sub_run_volume_decrease () {
+	#mod_app_pactl_volume_decrease "$@"
 	mod_app_amixer_volume_decrease "$@"
 }
 
 ##
 ### Tail: SubCmd / volume / VolumeDecrease
 ################################################################################
-
 
 
 ################################################################################
@@ -173,6 +191,11 @@ mod_app_amixer_volume_increase () {
 
 }
 
+mod_app_pactl_volume_increase () {
+
+	pactl set-sink-volume @DEFAULT_SINK@ +5000 &
+
+}
 
 ##
 ### Tail: Model / Volume / VolumeIncrease
@@ -184,6 +207,7 @@ mod_app_amixer_volume_increase () {
 ##
 
 sub_run_volume_increase () {
+	#mod_app_pactl_volume_increase "$@"
 	mod_app_amixer_volume_increase "$@"
 }
 
@@ -202,6 +226,11 @@ mod_app_amixer_volume_decrease_slowly () {
 
 }
 
+mod_app_pactl_volume_decrease_slowly () {
+
+	pactl set-sink-volume @DEFAULT_SINK@ -1000 &
+
+}
 
 ##
 ### Tail: Model / Volume / VolumeDecreaseSlowly
@@ -213,6 +242,7 @@ mod_app_amixer_volume_decrease_slowly () {
 ##
 
 sub_run_volume_decrease_slowly () {
+	#mod_app_pactl_volume_decrease_slowly "$@"
 	mod_app_amixer_volume_decrease_slowly "$@"
 }
 
@@ -231,6 +261,11 @@ mod_app_amixer_volume_increase_slowly () {
 
 }
 
+mod_app_pactl_volume_increase_slowly () {
+
+	pactl set-sink-volume @DEFAULT_SINK@ +1000 &
+
+}
 
 ##
 ### Tail: Model / Volume / VolumeIncreaseSlowly
@@ -242,13 +277,13 @@ mod_app_amixer_volume_increase_slowly () {
 ##
 
 sub_run_volume_increase_slowly () {
+	#mod_app_pactl_volume_increase_slowly "$@"
 	mod_app_amixer_volume_increase_slowly "$@"
 }
 
 ##
 ### Tail: SubCmd / Volume / VolumeIncreaseSlowly
 ################################################################################
-
 
 
 ################################################################################
@@ -308,6 +343,7 @@ Example:
 	$ $cmd_name help
 
 	$ $cmd_name volume_control
+	$ $cmd_name volume_applet
 
 	$ $cmd_name volume_toggle_mute
 
