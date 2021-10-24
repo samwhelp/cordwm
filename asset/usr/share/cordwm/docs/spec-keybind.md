@@ -155,6 +155,13 @@
 | `Win + w`         | Set to Monocle |
 | `Win + e`         | Set to Tile    |
 
+### Layout / Toggle Layout
+
+| Keybind           | Note                |
+| ----------------- | ------------------- |
+| `Alt + Esc`       | Toggle Prior Layout |
+| `Alt + i`         | Toggle Prior Layout |
+
 
 ### Layout / Cycle Layout
 
