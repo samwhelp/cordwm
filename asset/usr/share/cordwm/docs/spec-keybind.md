@@ -176,3 +176,6 @@
 | ----------------- | ------------------ |
 | `Win + k`         | Switch to Previous |
 | `Win + j`         | Switch to Next     |
+
+
+> [More](https://github.com/samwhelp/cordwm/blob/main/asset/src/cordwm/style/keybind/main.h)
