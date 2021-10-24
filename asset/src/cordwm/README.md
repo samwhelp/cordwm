@@ -8,5 +8,5 @@
 ## Docs
 
 * [keybind](../../usr/share/cordwm/docs/spec-keybind.md)
-* [mousebind](../../usr/share/cordwm/docs/spec-mousebind.md)
+* [btnbind](../../usr/share/cordwm/docs/spec-btnbind.md)
 * [boot](../../usr/share/cordwm/docs/spec-boot.md)

@@ -113,5 +113,5 @@ static const int lockfullscreen              = 1;           /* 1 will force focu
 #include "style/keybind/main.h"
 
 
-//#include "style/mousebind/default.h"
-#include "style/mousebind/main.h"
+//#include "style/btnbind/default.h"
+#include "style/btnbind/main.h"

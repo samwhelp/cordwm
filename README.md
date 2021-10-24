@@ -31,7 +31,7 @@
 | Spec |
 | --- |
 | [keybind](asset/usr/share/cordwm/docs/spec-keybind.md) |
-| [mousebind](asset/usr/share/cordwm/docs/spec-mousebind.md) |
+| [btnbind](asset/usr/share/cordwm/docs/spec-btnbind.md) |
 | [xsession](asset/usr/share/cordwm/docs/spec-boot.md) |
 
 
