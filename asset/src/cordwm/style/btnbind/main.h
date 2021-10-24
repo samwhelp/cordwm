@@ -7,7 +7,9 @@ static Button buttons[] = {
     { ClkLtSymbol,          0,              Button2,        setlayout,      {.v = &layouts[1]} },
     { ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[0]} },
     { ClkWinTitle,          0,              Button2,        zoom,           {0} },
-    { ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+    /*{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },*/
+    { ClkStatusText,        0,              Button2,        spawn,          SHCMD("cordwm-app-ctrl run_terminal") },
+    { ClkStatusText,        0,              Button3,        spawn,          SHCMD("cordwm-rofi-ctrl show_drun") },
 
     /* Keep movemouse? */
     /* { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} }, */

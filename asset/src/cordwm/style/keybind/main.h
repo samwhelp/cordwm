@@ -68,7 +68,7 @@ grep 'XK_Return' /usr/include/X11/keysymdef.h
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", NULL };
-static const char *termcmd[]  = {  "sakura", NULL }; // change this to your term
+//static const char *termcmd[]  = {  "sakura", NULL }; // change this to your term
 
 
 
