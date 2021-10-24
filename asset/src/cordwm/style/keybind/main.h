@@ -170,6 +170,11 @@ static Key keys[] = {
     // ## Layout / Toggle tabmode
     { MODWIN,                                     XK_i,               tabmode,            { -1 } },
 
+    // ## Layout / Toggle Layout:
+    { MODALT,                                     XK_Escape,          setlayout,          {0} },
+    { MODALT,                                     XK_i,               setlayout,          {0} },
+
+
     // ## Layout / Cycle Layout:
     { MODALT,                                     XK_grave,           cyclelayout,        {.i = -1 } },
     { MODALT,                                     XK_Tab,             cyclelayout,        {.i = +1 } },
@@ -258,7 +263,7 @@ static Key keys[] = {
     { MODALT,                                     XK_End,             togglegaps,         {0} },
 
     { ControlMask,                                XK_Escape,          defaultgaps,        {0} },
-    { MODALT,                                     XK_Escape,          togglegaps,         {0} },
+    { MODWIN,                                     XK_Escape,          togglegaps,         {0} },
 
     // overall gaps
     { MODALT,                                     XK_Page_Up,         incrgaps,           {.i = -1 } },
