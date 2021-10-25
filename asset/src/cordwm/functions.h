@@ -29,3 +29,6 @@ static void setgaps(int oh, int ov, int ih, int iv);
 
 static void movestack(const Arg *arg);
 static void tatami(Monitor *m);
+
+/* shiftview */
+static void shiftview(const Arg *arg);

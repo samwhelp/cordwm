@@ -428,6 +428,7 @@ struct Monitor {
 #include "vanitygaps.c"
 #include "movestack.c"
 #include "tatami.c"
+#include "shiftview.c"
 
 struct Pertag {
 	unsigned int curtag, prevtag; /* current and previous tag */
@@ -612,7 +613,7 @@ void buttonpress(XEvent *e) {
       click = ClkStatusText;
     else
       click = ClkWinTitle;
-    	} 
+    }
 	if(ev->window == selmon->tabwin) {
 		i = 0; x = 0;
 		for(c = selmon->clients; c; c = c->next){
@@ -2027,8 +2028,8 @@ void motionnotify(XEvent *e) {
 	} else if (selmon->previewshow != 0) {
 		selmon->previewshow = 0;
 		showtagpreview(0);
-   } 
- 
+   }
+
   if (ev->window != root)
     return;
   if ((m = recttomon(ev->x_root, ev->y_root, 1, 1)) != mon && mon) {
@@ -2925,7 +2926,7 @@ void switchtag(void) {
 				imlib_context_set_drawable(selmon->tagmap[i]);
 				imlib_render_image_part_on_drawable_at_size(0, 0, selmon->mw, selmon->mh, 0, 0, selmon->mw / scalepreview, selmon->mh / scalepreview);
 				imlib_free_image();
-			}                         
+			}
 		}
 	}
 }
@@ -3007,7 +3008,7 @@ void toggleview(const Arg *arg) {
   unsigned int newtagset =
       selmon->tagset[selmon->seltags] ^ (arg->ui & TAGMASK);
    int i;
- 
+
 
   if (newtagset) {
          switchtag();
@@ -3175,7 +3176,7 @@ void updatebarpos(Monitor *m) {
 
   m->wy = m->my;
   m->wh = m->mh;
-  	
+
   for(c = m->clients; c; c = c->next) {
 		if(ISVISIBLE(c)) ++nvis;
 	}

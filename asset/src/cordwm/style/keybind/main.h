@@ -200,10 +200,10 @@ static Key keys[] = {
 
 
     // ## Tag / Cycle Tag: TODO:
-    //{ MODALT,                                     XK_a,               cycletag,           {.i = -1 } },
-    //{ MODALT,                                     XK_s,               cycletag,           {.i = +1 } },
-    //{ MODALT,                                     XK_h,               cycletag,           {.i = -1 } },
-    //{ MODALT,                                     XK_l,               cycletag,           {.i = +1 } },
+    { MODALT,                                     XK_a,               shiftview,           {.i = -1 } },
+    { MODALT,                                     XK_s,               shiftview,           {.i = +1 } },
+    { MODALT,                                     XK_h,               shiftview,           {.i = -1 } },
+    { MODALT,                                     XK_l,               shiftview,           {.i = +1 } },
 
     // ## Tag / Specific Tag:
     TAGKEYS(                                      XK_1,               0)
