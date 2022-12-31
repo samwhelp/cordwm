@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Cordwm
-Comment=Dynamic window manager
-Exec=/usr/share/cordwm/xsessions/cordwm-session
-Icon=dwm
-Type=XSession
