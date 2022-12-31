@@ -30,9 +30,9 @@
 
 | Spec |
 | --- |
-| [keybind](asset/usr/share/cordwm/docs/spec-keybind.md) |
-| [btnbind](asset/usr/share/cordwm/docs/spec-btnbind.md) |
-| [xsession](asset/usr/share/cordwm/docs/spec-boot.md) |
+| [keybind](https://github.com/samwhelp/cordwm/blob/main/asset/usr/share/cordwm/docs/spec-keybind.md) |
+| [btnbind](https://github.com/samwhelp/cordwm/blob/main/asset/usr/share/cordwm/docs/spec-btnbind.md) |
+| [xsession](https://github.com/samwhelp/cordwm/blob/main/asset/usr/share/cordwm/docs/spec-boot.md) |
 
 
 ## Note
@@ -163,10 +163,10 @@ make clean
 
 ## Reference
 
-* https://wiki.archlinux.org/title/Creating_packages
-* https://wiki.archlinux.org/title/Arch_User_Repository
-* https://archlinux.org/groups/x86_64/base-devel/
-* https://wiki.archlinux.org/title/pacman
-* https://wiki.archlinux.org/title/makepkg
-* https://wiki.archlinux.org/title/PKGBUILD
-* https://wiki.archlinux.org/title/Arch_package_guidelines
+* [https://wiki.archlinux.org/title/Creating_packages](https://wiki.archlinux.org/title/Creating_packages)
+* [https://wiki.archlinux.org/title/Arch_User_Repository](https://wiki.archlinux.org/title/Arch_User_Repository)
+* [https://archlinux.org/groups/x86_64/base-devel/](https://archlinux.org/groups/x86_64/base-devel/)
+* [https://wiki.archlinux.org/title/pacman](https://wiki.archlinux.org/title/pacman)
+* [https://wiki.archlinux.org/title/makepkg](https://wiki.archlinux.org/title/makepkg)
+* [https://wiki.archlinux.org/title/PKGBUILD](https://wiki.archlinux.org/title/PKGBUILD)
+* [https://wiki.archlinux.org/title/Arch_package_guidelines](https://wiki.archlinux.org/title/Arch_package_guidelines)
