@@ -24,7 +24,7 @@
 
 > This project is created for [archcraft-adjustment-iso-profile](https://github.com/samwhelp/archcraft-adjustment-iso-profile/blob/main/iso-profile/openbox/adjustment-openbox-with-tint/profile/packages.x86_64#L768).
 
-> But you can [build and install]((#how-to-install)) for yourself.
+> But you can [build and install](#how-to-install) for yourself.
 
 ## Docs
 
